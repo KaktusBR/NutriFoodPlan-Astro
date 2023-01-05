@@ -1,0 +1,14 @@
+@font-face {
+  font-family: Inter;
+  src: url(/fonts/inter-regular.ttf);
+}
+
+@font-face {
+  font-family: InterBold;
+  src: url(/fonts/inter-bold.ttf);
+}
+
+* {
+  font-family : Inter, Verdana, Tahoma;
+}
+

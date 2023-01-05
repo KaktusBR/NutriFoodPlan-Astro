@@ -1,0 +1,30 @@
+---
+export interface Props {
+  title: string;
+  body?: string;
+  href?: string;
+  img?: string;
+  style?: string;
+}
+
+const { href, title, body, img, style } = Astro.props;
+---
+
+{
+  style == "headline" ? (
+    <div class="overflow-hidden">
+      <div class="px-6">
+        <div class="font-bold text-3xl mb-2">{title}</div>
+        <p class="text-gray-700 text-xl">{body}</p>
+      </div>
+    </div>
+  ) : (
+    <a href={href}><div class="rounded overflow-hidden shadow-lg bg-white">
+      <img class="w-[40%] float-left mr-4" src={img} alt={title} />
+      <div class="px-6">
+        <div class="font-bold text-xl mb-2">{title}</div>
+        <p class="text-gray-700 text-sm">{body}</p>
+      </div>
+    </div></a>
+  )
+}

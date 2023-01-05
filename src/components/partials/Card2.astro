@@ -1,0 +1,28 @@
+---
+export interface Props {
+  title: string;
+  body?: string;
+  href?: string;
+  pack?: string;
+  icon?: string;
+}
+
+const { href, title, body, pack, icon } = Astro.props;
+import { Icon } from "astro-icon";
+---
+
+<div class="overflow-hidden p-4">
+    <div class="w-[128px] float-left mr-4">
+    <Icon pack={pack} name={icon} />
+  </div>
+    <div class="text-nutriGreen-200">
+        <p class="font-bold  mb-2 text-xl text-nutriPink-100"> {title} </p>
+        <p class="text-gray-700 text-lg">{body}</p>
+    </div>
+</div>
+
+<style lang="css">
+  [astro-icon] {
+      color: #22622C;
+  }
+</style>

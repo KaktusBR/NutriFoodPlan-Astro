@@ -1,0 +1,29 @@
+{
+  "name": "@example/basics",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^0.11.6",
+    "@astrojs/partytown": "^1.0.1",
+    "@astrojs/prefetch": "^0.1.1",
+    "@astrojs/sitemap": "^1.0.0",
+    "@astrojs/tailwind": "^2.1.2",
+    "@headlessui/react": "^1.7.7",
+    "@tailwindcss/line-clamp": "^0.4.2",
+    "astro": "^1.6.7",
+    "astro-i18next": "^1.0.0-beta.13",
+    "astro-icon": "^0.8.0",
+    "astro-seo": "^0.6.0",
+    "country-flag-icons": "^1.5.5",
+    "flag-icons": "^6.6.6",
+    "tailwindcss": "^3.2.4"
+  }
+}
