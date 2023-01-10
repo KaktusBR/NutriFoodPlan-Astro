@@ -1,0 +1,377 @@
+---
+import Hero from "../../components/Hero.astro";
+import Card from "../../components/partials/Card.astro";
+import Card2 from "../../components/partials/Card2.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Nutri Food Plan">
+  <Hero />
+  <!-- <section class="container mx-auto grid grid-cols-4 gap-4 py-8">
+    <Card
+      title="NUTRI FOOD PLAN"
+      body="Chudnite bez hladovania"
+      style="headline"
+    />
+    <Card
+      href="#"
+      title="Poradenské centrá"
+      body="Kde všade nájdete našich poradcov?"
+      img="https://www.nutrifood.sk/wp-content/webp-express/webp-images/uploads/2022/01/Mirka-Varsova-NUTRI-FOOD-PLAN-chudnem-s-poradcom-.png.webp"
+    />
+    <Card
+      href="#"
+      title="Vstupné vyšetrenie"
+      body="Prečo je dôležitá diagnostika metabolizmu?"
+      img="https://www.nutrifood.sk/wp-content/webp-express/webp-images/uploads/2022/01/Chudnem-s-poradcom-NUTRI-FOOD-PLAN-NutriFood-MRP-.png.webp"
+    />
+    <Card
+      href="#"
+      title="Potraviny MRP"
+      body="Nutrične vyvážené potraviny dostupné iba u poradcu"
+      img="https://www.nutrifood.sk/wp-content/webp-express/webp-images/uploads/2022/01/Chudnutie-s-poradcom-potraviny-NUTRI-FOOD-PLAN-NutriFood-MRP-.png.webp"
+    />
+  </section> -->
+
+  <section class="container mx-auto grid grid-cols-3 gap-4 py-8">
+    <Card2
+      title="Čo znamená skratka MRP?"
+      body="MRP je skratka z anglického pojmu Meal Replacement (úplná náhrada stravy)."
+      pack="healthicons"
+      icon="hot-meal"
+    />
+    <Card2
+      title="Vhodné pre alergikov a vegetariánov"
+      body="Svoje obľúbené potraviny nájdete bezlaktózové či bezlepkové, vhodné pre vegetariánov."
+      pack="mdi"
+      icon="allergen-off"
+    />
+    <Card2
+      title="Vysokobielkovinové potraviny s minimom cukrov"
+      body="S radou NutriFood Keto si na svoje prídu aj športovci. Iba na eshope."
+      pack="ep"
+      icon="sugar"
+    />
+    <Card2
+      title="Certifikovaní výživoví poradcovia"
+      body="Vyberte si svojho nutričného poradcu. Poradenské centrá NUTRI FOOD PLAN sú dostupné na celom Slovensku."
+      pack="healthicons"
+      icon="doctor-female"
+    />
+    <Card2
+      title="Klinicky testované"
+      body="Potraviny NutriFood MRP sú vedecky testované a lekársky overené v praxi."
+      pack="healthicons"
+      icon="ambulatory-clinic"
+    />
+    <Card2
+      title="Inšpirácia na každý deň"
+      body="Recepty, články, tipy a úspešné premeny."
+      pack="mdi"
+      icon="lightbulb-on-outline"
+    />
+  </section>
+  <div
+    class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 my-8"
+  >
+    <a
+      rel="noopener noreferrer"
+      href="#"
+      class="px-8 py-3 text-lg font-semibold border rounded border-nutriGreen-200 dark:bg-violet-400 dark:text-gray-900"
+      >Viac o programe MRP</a
+    >
+  </div>
+  <section class="container mx-auto py-8">
+    <h2 class="container mx-auto text-3xl mt-8 text-center font-extrabold">
+      Zisti ako na tom si
+    </h2>
+    <div
+      class="yz-widget"
+      data-calculator-type="bmi"
+      data-language="en"
+      data-unit-system="metric"
+      data-background-color="#fff"
+      data-text-color="#000"
+      data-primary-color="#22622C"
+      data-alternate-background-color="#FFFFFF"
+      data-alternate-text-color="#FFFFFF"
+      data-secondary-color="#e6007e"
+    >
+      <span class="yz-copyright"
+        >Powered by <a href="https://www.yazio.com/en/bmi-calculator">YAZIO</a>
+      </span>
+    </div>
+    <script src="https://widget.yazio.com/calculator.js" async></script>
+  </section>
+
+  <section>
+    <div class="bg-gray-50">
+      <div
+        class="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8"
+      >
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <span class="block">Nezavazne sa objednat</span>
+          <span class="block text-nutriPink-100">na vstupnu kontrolu</span>
+        </h2>
+        <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+          <a
+            rel="noopener noreferrer"
+            href="#"
+            class="px-8 py-3 text-lg font-semibold border rounded border-nutriGreen-200 dark:bg-violet-400 dark:text-gray-900"
+            >Chcem konzultaciu zadarmo</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container mx-auto py-8">
+    <h2 class="container mx-auto text-3xl mt-8 text-center font-extrabold">
+      Odbornici o programe MRP
+    </h2>
+
+    <div class="container my-24 px-6 mx-auto">
+      <section class="mb-32 text-gray-800 text-center">
+        <div class="grid md:grid-cols-3 gap-6 lg:gap-12">
+          <div class="mb-12 md:mb-0">
+            <div class="flex justify-center mb-6">
+              <img
+                src="https://www.nutrifood.sk/wp-content/webp-express/webp-images/uploads/2022/02/NUTRI-FOOD-PLAN-spolupraca-s-lekarmi-8.jpg.webp"
+                class="rounded-full shadow-lg w-32"
+              />
+            </div>
+            <h5 class="text-lg font-bold mb-4">MUDr. Dagmar Randová</h5>
+            <p class="mb-4 line-clamp-6">
+              Ako lekárka rádiodiagnostického oddelenia sa denne stretávam s
+              pacientami s rôznymi druhmi diagnóz a môžem povedať, že za mnohými
+              civilizačnými ochoreniami sa skrýva práve obezita či nadváha. Na
+              Slovensku je síce veľa diétnych metód či doplnkov stravy, ktoré
+              sľubujú rýchle chudnutie, avšak diétnych programov, ktoré sú
+              povolené a užívajú sa ako úplná možná náhrada celodennej stravy je
+              veľmi málo. Osobne mám dobrú skúsenosť s liečebnými programami
+              NUTRI FOOD PLAN, ktorých produkty sú určené ako plnohodnotná
+              náhrada celodennej stravy. Zabezpečujú pritom pravidelný a
+              kontrolovaný príjem potrebných makro živín a mikro živín a
+              obsahujú odporúčanú dennú dávku vitamínov, minerálov, stopových
+              prvkov a aminokyselín. Ide o rokmi overený spôsob redukcie
+              hmotnosti a navyše ako jediný na Slovensku sú programy NUTRI FOOD
+              PLAN poskytované pod pravidelným odborným dohľadom nad rýchlym a
+              zdravým znižovaním váhy.
+            </p>
+            <a
+              rel="noopener noreferrer"
+              href="#"
+              class="inline-block mt-4 px-8 py-3 text-md font-semibold border rounded border-nutriGreen-200 dark:bg-violet-400 dark:text-gray-900"
+              >Citaj viac</a
+            >
+          </div>
+          <div class="mb-12 md:mb-0">
+            <div class="flex justify-center mb-6">
+              <img
+                src="https://www.nutrifood.sk/wp-content/webp-express/webp-images/uploads/2022/02/NUTRI-FOOD-PLAN-spolupraca-s-lekarmi-5.jpg.webp"
+                class="rounded-full shadow-lg w-32"
+              />
+            </div>
+            <h5 class="text-lg font-bold mb-4">
+              MUDr. Silvia Ožvoldíková, MPH, MBA, PhD.
+            </h5>
+            <p class="mb-4 line-clamp-6">
+              Som presvedčená, že už v ambulancii praktického lekára je možné
+              predchádzať obezite a teda civilizačným ochoreniam, ktoré vznikajú
+              v dôsledku obezity a nadváhy. Po vylúčení možných ochorení akými
+              sú napríklad ochorenie štítnej žľazy alebo diabetes, resp. liečba
+              týchto ochorení, ktorá môže viesť k neúmernému narastaniu telesnej
+              hmotnosti, dokáže aj praktický lekár odhaliť, že zdravotný problém
+              u pacienta vyplýva z jeho nadváhy. Svojím pacientom sa snažím
+              vysvetliť a naučiť ich zásady zdravého životného štýlu a
+              upozorňujem aj na dôležitosť pravidelnosti pri stravovaní a pitnom
+              režime aj pohybovej aktivity. Samozrejme prihliadam aj na ďalšie
+              aspekty a rozdielnosti dôvodov priberania zvlášť u mužov, žien po
+              pôrode či žien po 40tke a v období menopauzy. Úloha praktického
+              lekára v takýchto prípadoch je kľúčová, pretože už samotný
+              praktický lekár dokáže definovať problém. Následne správnou
+              edukáciou a odporúčaním vhodného spôsobu redukcie telesnej
+              hmotnosti u svojich pacientov môže pôsobiť preventívne a
+              predchádzať rôznym civilizačným ochoreniam, ktoré vznikajú vplyvom
+              obezity. Pretože práve obezita môže byť spúšťačom alebo dôsledkom
+              niektorých ochorení.
+            </p><a
+              rel="noopener noreferrer"
+              href="#"
+              class="inline-block mt-4 px-8 py-3 text-md font-semibold border rounded border-nutriGreen-200 dark:bg-violet-400 dark:text-gray-900"
+              >Citaj viac</a
+            >
+          </div>
+          <div class="mb-0">
+            <div class="flex justify-center mb-6">
+              <img
+                src="https://www.nutrifood.sk/wp-content/webp-express/webp-images/uploads/2022/02/NUTRI-FOOD-PLAN-spolupraca-s-lekarmi-Ivan-Mach.jpg.webp"
+                class="rounded-full shadow-lg w-32"
+              />
+            </div>
+            <h5 class="text-lg font-bold mb-4">Ing. Ivan Mach, CSc.</h5>
+            <p class="mb-4 line-clamp-6">
+              Na Slovenskom aj Českom trhu sa rôzne diéty doslova predbiehajú.
+              Ľudia tak často hazardujú so svojím zdravím, pretože veľakrát ani
+              nevedia, ako daná diéta či samotné produkty fungujú a či sú vôbec
+              pre nich vhodné. Tieto diéty jednoznačne patria do rúk
+              certifikovaných výživových poradcov, ktorí prihliadajú na
+              zdravotný stav klienta. Nutričný poradca na základe zdravotného
+              stavu klienta a podrobnej diagnostike tela klientovi zostaví
+              stravovací plán, do ktorého zaradí vhodné nízkoenergetické
+              potraviny. Ak sa rozhodnete držať akúkoľvek diétu, overte si v
+              záujme vášho zdravia, či daná mieta je nutrične vyvážená – a teda
+              obsahuje látky ako sú: vitamíny, minerálne látky, stopové prvky.
+            </p><a
+              rel="noopener noreferrer"
+              href="#"
+              class="inline-block mt-4 px-8 py-3 text-md font-semibold border rounded border-nutriGreen-200 dark:bg-violet-400 dark:text-gray-900"
+              >Citaj viac</a
+            >
+          </div>
+          <div class="mb-12 md:mb-0">
+            <div class="flex justify-center mb-6">
+              <img
+                src="https://www.nutrifood.sk/wp-content/webp-express/webp-images/uploads/2022/02/NUTRI-FOOD-PLAN-spolupraca-s-lekarmi-Cibikova.jpg.webp"
+                class="rounded-full shadow-lg w-32"
+              />
+            </div>
+            <h5 class="text-lg font-bold mb-4">MUDr. Martina Cibíková</h5>
+            <p class="mb-4 line-clamp-6">
+              So mnou ako lekárkou – internistkou sa ľudia stretávajú pri veľkej
+              väčšine ochorení, pretože interné vyšetrenie sa vykonáva aj ako
+              preventívne vyšetrenie, ale aj ako predoperačné vyšetrenie. V
+              niektorých prípadoch sa však operačným zákrokom dalo predísť – ide
+              najmä o zdravotné problémy, ktoré vznikli v dôsledku civilizačného
+              ochorenia spôsobeného obezitou. Ľudia často podľahnú stravovacím
+              zlozvykom a dochádza k nekontrolovanému naberaniu hmotnosti. Za
+              overenú a skutočne účinnú metódu redukcie hmotnosti považujem
+              metódu, pri ktorej na redukciu hmotnosti dohliada kvalifikovaný
+              odborník, samozrejme v kombinácii s nutrične vyváženými programami
+              určenými pre plnohodnotnú náhradu stravy. A keď sa k tomu pridá
+              ešte sieť výživových poradcov po celom Slovensku, tak túto
+              podmienku spĺňajú jedine redukčné a liečebné programy NUTRI FOOD
+              PLAN, ktoré môžem jednoznačne odporučiť.
+            </p>
+            <a
+              rel="noopener noreferrer"
+              href="#"
+              class="inline-block mt-4 px-8 py-3 text-md font-semibold border rounded border-nutriGreen-200 dark:bg-violet-400 dark:text-gray-900"
+              >Citaj viac</a
+            >
+          </div>
+          <div class="mb-12 md:mb-0">
+            <div class="flex justify-center mb-6">
+              <img
+                src="https://www.nutrifood.sk/wp-content/webp-express/webp-images/uploads/2022/02/NUTRI-FOOD-PLAN-spolupraca-s-lekarmi-Malcharkova.jpg.webp"
+                class="rounded-full shadow-lg w-32"
+              />
+            </div>
+            <h5 class="text-lg font-bold mb-4">MUDr. Sofia Malchárková, MBA</h5>
+            <p class="mb-4 line-clamp-6">
+              Civilizačných ochorení na Slovensku každoročne pribúda a boj s
+              nimi nie je vôbec jednoduchý. Z mojej niekoľkoročnej praxe však
+              môžem potvrdiť, že množstvu zdravotných problémov a komplikácií je
+              možné úspešne predchádzať, a to nielen zmenou životného štýlu, ale
+              aj úpravu stravovacích návykov. Veľa ľudí však v sebe nenachádza
+              pevnú vôľu a samozrejme aj dnešná uponáhľaná doba nám nedovoľuje
+              stravovať sa podľa vzorov a odporúčaní mnohých nutričných a
+              výživových poradcov. Na liečebných redukčných programoch NUTRI
+              FOOD PLAN oceňujem, že prostredníctvom programu „working“ mysleli
+              aj na ľudí, ktorí kvôli časovej tiesni a pracovnej
+              zaneprázdnenosti nemajú možnosti dodržiavať pravidelný stravovací
+              režim. A práve vďaka tomuto programu si môžu zabezpečiť komplexný
+              prísun vitamínov, minerálov a všetkých potrebných látok na dennej
+              báze a podporiť tak vlastnú zdravú životosprávu.
+            </p><a
+              rel="noopener noreferrer"
+              href="#"
+              class="inline-block mt-4 px-8 py-3 text-md font-semibold border rounded border-nutriGreen-200 dark:bg-violet-400 dark:text-gray-900"
+              >Citaj viac</a
+            >
+          </div>
+          <div class="mb-0">
+            <div class="flex justify-center mb-6">
+              <img
+                src="https://www.nutrifood.sk/wp-content/webp-express/webp-images/uploads/2022/02/NUTRI-FOOD-PLAN-spolupraca-s-lekarmi-6.jpg.webp"
+                class="rounded-full shadow-lg w-32"
+              />
+            </div>
+            <h5 class="text-lg font-bold mb-4">MUDr. Lenka Hošková</h5>
+            <p class="mb-4 line-clamp-6">
+              Kardiovaskulárne ochorenia patria svojím výskytom medzi tie
+              najvýznamnejšie. Jedná sa predovšetkým o akútny infarkt myokardu,
+              cievnu mozgovú príhodu a postihnutie končatinových tepien. Jedným
+              z množstva rizikových faktorov je práve obezita a nadváha, ich
+              prevalencia vo vyspelých európskych štátoch v posledných rokoch
+              neustále narastá. Je celá rada možností ako obezitu účinne liečiť,
+              avšak práve kľúčovým momentom je samotné rozhodnutie pacienta
+              svoju hmotnosť redukovať. K tomu potrebuje správnu motiváciu, celý
+              rad dôležitých informácií a odborne vedený dohľad i s psychickou
+              podporou. Vďaka kvalifikovaným výživový poradcom, nutričným
+              terapeutom a spoľahlivo účinným, vyváženým, bezpečným a cenovo
+              prijateľným redukčným programom NUTRI FOOD PLAN je možné dosiahnuť
+              požadovaného a dlhodobého výsledku.
+            </p>
+            <a
+              rel="noopener noreferrer"
+              href="#"
+              class="inline-block mt-4 px-8 py-3 text-md font-semibold border rounded border-nutriGreen-200 dark:bg-violet-400 dark:text-gray-900"
+              >Citaj viac</a
+            >
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div>
+      <div>
+        <img src="" alt="" />
+        <h3></h3>
+      </div>
+      <div>
+        <img src="" alt="" />
+        <h3></h3>
+        <p></p>
+      </div>
+    </div>
+  </section>
+  <!-- 
+  <section>
+    <div class="container mx-auto grid grid-cols-2 gap-4 py-8 mb-8">
+      <Card
+        href="#"
+        title="Akcie poradní"
+        body="Pozrite si akcie našich poradní a potravín NUTRI FOOD PLAN MRP"
+        img="https://www.nutrifood.sk/wp-content/webp-express/webp-images/uploads/2022/01/Akcie-poradni-NUTRI-FOOD-PLAN-NutriFood-MRP-.png.webp"
+      />
+      <Card
+        href="#"
+        title="Fázy chudnutia"
+        body="Nájdeme riešenie každého Vášho problému. Čo teda robiť, keď potrebujte schudnúť? Ako sa zbaviť tuku? A najmä ako začať? Poradíme vám."
+        img="https://www.nutrifood.sk/wp-content/webp-express/webp-images/uploads/2021/08/nutri-food-plan-bmi-kalkulacka-1.png.webp"
+      />
+      <Card
+        href="#"
+        title="Kariéra"
+        body="Vypočítajte si svoj BMI (Index  telesnej hmotnosti)  a zistite svoju ideálnu váhu."
+        img="https://www.nutrifood.sk/wp-content/webp-express/webp-images/uploads/2022/01/Chudnutie-NUTRI-FOOD-PLAN-NutriFood-MRP-.png.webp"
+      />
+      <Card
+        href="#"
+        title="BMI kalulačka"
+        body="Nutrične vyvážené potraviny dostupné iba u poradcu"
+        img="https://www.nutrifood.sk/wp-content/webp-express/webp-images/uploads/2021/08/BMI-kalkulacka-Nutri-Food-Plan-1.png.webp"
+      />
+    </div>
+  </section>
+  <section>
+    Certifikovaní poradcovia v každom kraji Chudnete bezpečne s programom
+    Chudnem s poradcom s nutrične vyváženými potravinami NutriFood MRP. Vhodné
+    pre alergikov V oboch našich radách nájdete svoje obľúbené potraviny aj
+    bezlaktózové či bezlepkové. Klinický testované Obe rady potravín sú vedecky
+    testované a lekársky overené v praxi. Vysokobielkovinové potraviny s minimom
+    cukrov S radou NutriFood Keto si na svoje prídu aj športovci. Iba na eshope.
+    Vhodné pre vegetariánov Všetky naše potraviny sú vhodné pre vegetariánov.
+    Inšpirácia na každý deň Recepty, články, tipy a úspešné premeny.
+  </section> -->
+</Layout>

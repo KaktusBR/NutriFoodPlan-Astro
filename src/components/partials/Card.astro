@@ -5,26 +5,44 @@ export interface Props {
   href?: string;
   img?: string;
   style?: string;
+  size?: string;
+}
+//       
+const { href, title, body, img, style, size } = Astro.props;
+---
+{style == "headline" && 
+  <div class="overflow-hidden">
+    <div class="px-6">
+      <h3 class="font-bold text-3xl lg:text-2xl mb-2">{title}</h3>
+      <p class="text-gray-700 text-xl">{body}</p>
+    </div>
+  </div>
 }
 
-const { href, title, body, img, style } = Astro.props;
----
+{size == "lg" &&
+ <a href={href}><div class='flex items-center justify-center'>
+	<div class="items-center justify-center rounded-xl group sm:flex bg-white bg-opacity-50 shadow-xl hover:rounded-2xl h-auto">
+		<img  class="mx-auto w-[45%] block rounded-lg rounded-r-none"  alt="art cover" loading="lazy" src={img} alt={title} />
+		<div class="sm:w-8/12 pl-2 p-5">
+			<div class="space-y-2">
+          <h3 class="font-bold text-base lg:text-sm mb-1 align-middle">{title}</h3>
+        <p class="text-gray-700 text-sm lg:text-xs">{body}</p>
+			</div>
+		</div>
+	</div>
+</div></a>
+}
 
-{
-  style == "headline" ? (
-    <div class="overflow-hidden">
-      <div class="px-6">
-        <div class="font-bold text-3xl mb-2">{title}</div>
-        <p class="text-gray-700 text-xl">{body}</p>
-      </div>
-    </div>
-  ) : (
-    <a href={href}><div class="rounded overflow-hidden shadow-lg bg-white">
-      <img class="w-[40%] float-left mr-4" src={img} alt={title} />
-      <div class="px-6">
-        <div class="font-bold text-xl mb-2">{title}</div>
-        <p class="text-gray-700 text-sm">{body}</p>
-      </div>
-    </div></a>
-  )
+{size == "sm" &&
+  <a href={href}><div class='flex items-center justify-center'>
+	<div class="items-center justify-center rounded-xl group sm:flex bg-white bg-opacity-50 shadow-xl hover:rounded-2xl h-auto md:h-[113px] lg:h-[154px] xl:h-[95px]">
+		<img  class="mx-auto w-[45%] block rounded-lg rounded-r-none"  alt="art cover" loading="lazy" src={img} alt={title} />
+		<div class="sm:w-8/12 pl-2 p-5">
+			<div class="space-y-2">
+          <h3 class="font-bold text-base lg:text-sm mb-1 align-middle">{title}</h3>
+        <p class="text-gray-700 text-sm lg:text-xs">{body}</p>
+			</div>
+		</div>
+	</div>
+</div></a>
 }

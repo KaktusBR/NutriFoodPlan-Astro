@@ -10,4 +10,8 @@ export default defineConfig({
   integrations: [tailwind(), mdx(), partytown(), prefetch(), sitemap(), astroI18next()],
   defaultLocale: "sk",
   locales: ["sk", "cz", "hu"],
+  // buildOptions: {
+  //   site: 'https://www.nutrifoodplan.com',
+  //   sitemap: true, // Generate sitemap (set to "false" to disable)
+  // },
 });

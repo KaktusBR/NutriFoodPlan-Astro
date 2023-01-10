@@ -1,9 +1,124 @@
 ---
 import Hero from "../components/Hero.astro";
+import Card from "../components/partials/Card.astro";
+import Card2 from "../components/partials/Card2.astro";
+import OdporucaniaOdbornikov from "../components/partials/odporucaniaOdbornikov.astro";
+import OnlinePoradna from "../components/partials/onlinePoradna.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Nutri Food Plan">
   <Hero />
- 
+  <section class="container mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 py-8 px-4">
+    <Card
+      title="NUTRI FOOD PLAN"
+      body="Chudnite bez hladovania"
+      style="headline"
+    />
+    <Card
+      href="#"
+      title="Poradenské centrá"
+      body="Kde všade nájdete našich poradcov?"
+      img="https://www.nutrifood.sk/wp-content/webp-express/webp-images/uploads/2022/01/Mirka-Varsova-NUTRI-FOOD-PLAN-chudnem-s-poradcom-.png.webp"
+      size="sm"
+      />
+    <Card
+      href="#"
+      title="Vstupné vyšetrenie"
+      body="Prečo je dôležitá diagnostika metabolizmu?"
+      img="https://www.nutrifood.sk/wp-content/webp-express/webp-images/uploads/2022/01/Chudnem-s-poradcom-NUTRI-FOOD-PLAN-NutriFood-MRP-.png.webp"
+      size="sm"
+    />
+    <Card
+      href="#"
+      title="Potraviny MRP"
+      body="Nutrične vyvážené potraviny dostupné iba u poradcu"
+      img="https://www.nutrifood.sk/wp-content/webp-express/webp-images/uploads/2022/01/Chudnutie-s-poradcom-potraviny-NUTRI-FOOD-PLAN-NutriFood-MRP-.png.webp"
+      size="sm"
+    />
+  </section>
+
+  <section class="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-4 py-8  px-4">
+    <Card2
+      title="Čo znamená skratka MRP?"
+      body="MRP je skratka z anglického pojmu Meal Replacement (úplná náhrada stravy)."
+      pack="healthicons"
+      icon="hot-meal"
+    />
+    <Card2
+      title="Vhodné pre alergikov a vegetariánov"
+      body="Svoje obľúbené potraviny nájdete bezlaktózové či bezlepkové, vhodné pre vegetariánov."
+      pack="mdi"
+      icon="allergen-off"
+    />
+    <Card2
+      title="Vysokobielkovinové potraviny s minimom cukrov"
+      body="S radou NutriFood Keto si na svoje prídu aj športovci. Iba na eshope."
+      pack="ep"
+      icon="sugar"
+    />
+    <Card2
+      title="Certifikovaní výživoví poradcovia"
+      body="Vyberte si svojho nutričného poradcu. Poradenské centrá NUTRI FOOD PLAN sú dostupné na celom Slovensku."
+      pack="healthicons"
+      icon="doctor-female"
+    />
+    <Card2
+      title="Klinicky testované"
+      body="Potraviny NutriFood MRP sú vedecky testované a lekársky overené v praxi."
+      pack="healthicons"
+      icon="ambulatory-clinic"
+    />
+    <Card2
+      title="Inšpirácia na každý deň"
+      body="Recepty, články, tipy a úspešné premeny."
+      pack="mdi"
+      icon="lightbulb-on-outline"
+    />
+  </section>
+  <section class="bg-slate-100  px-4">
+    <h2 class="container mx-auto text-3xl mt-8">Aktuálne v našich poradenských centrách</h2>
+    <div class="container mx-auto grid grid-cols-2 gap-4 py-8 mb-8">
+      <Card
+        href="#"
+        title="Akcie poradní"
+        body="Pozrite si akcie našich poradní a potravín NUTRI FOOD PLAN MRP"
+        img="https://www.nutrifood.sk/wp-content/webp-express/webp-images/uploads/2022/01/Akcie-poradni-NUTRI-FOOD-PLAN-NutriFood-MRP-.png.webp"
+        size="lg"
+      />
+      <Card
+        href="#"
+        title="Fázy chudnutia"
+        body="Nájdeme riešenie každého Vášho problému. Čo teda robiť, keď potrebujte schudnúť? Ako sa zbaviť tuku? A najmä ako začať? Poradíme vám."
+        img="https://www.nutrifood.sk/wp-content/webp-express/webp-images/uploads/2021/08/nutri-food-plan-bmi-kalkulacka-1.png.webp"
+        size="lg"
+      />
+      <Card
+        href="#"
+        title="Kariéra"
+        body="Vypočítajte si svoj BMI (Index  telesnej hmotnosti)  a zistite svoju ideálnu váhu."
+        img="https://www.nutrifood.sk/wp-content/webp-express/webp-images/uploads/2022/01/Chudnutie-NUTRI-FOOD-PLAN-NutriFood-MRP-.png.webp"
+        size="lg"
+      />
+      <Card
+        href="#"
+        title="BMI kalulačka"
+        body="Nutrične vyvážené potraviny dostupné iba u poradcu"
+        img="https://www.nutrifood.sk/wp-content/webp-express/webp-images/uploads/2021/08/BMI-kalkulacka-Nutri-Food-Plan-1.png.webp"
+        size="lg"
+      />
+    </div>
+  </section>
+  <OnlinePoradna />
+  <OdporucaniaOdbornikov />
+  <section>
+    Certifikovaní poradcovia v každom kraji Chudnete bezpečne s programom
+    Chudnem s poradcom s nutrične vyváženými potravinami NutriFood MRP. Vhodné
+    pre alergikov V oboch našich radách nájdete svoje obľúbené potraviny aj
+    bezlaktózové či bezlepkové. Klinický testované Obe rady potravín sú vedecky
+    testované a lekársky overené v praxi. Vysokobielkovinové potraviny s minimom
+    cukrov S radou NutriFood Keto si na svoje prídu aj športovci. Iba na eshope.
+    Vhodné pre vegetariánov Všetky naše potraviny sú vhodné pre vegetariánov.
+    Inšpirácia na každý deň Recepty, články, tipy a úspešné premeny.
+  </section>
 </Layout>
